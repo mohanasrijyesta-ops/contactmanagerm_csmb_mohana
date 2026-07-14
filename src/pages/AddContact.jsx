@@ -91,8 +91,16 @@ async function handleSubmit(e) {
         }
         navigate("/");
     } catch (error) {
-        console.log(error);
+    console.error(error);
+
+    if (error.response) {
+        console.log("Status:", error.response.status);
+        console.log("Data:", error.response.data);
+        alert(JSON.stringify(error.response.data));
+    } else {
+        alert(error.message);
     }
+}
 }
 function openFilePicker() {
     fileInputRef.current.click();
