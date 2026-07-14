@@ -67,7 +67,7 @@ function ContactList() {
                             <div className="avatar">
                                 {contact.profileImage ? (
                                     <img
-                                        src={`https://contactmanager1-csmb-mohana.onrender.com${contact.profileImage}`}
+                                        src={`https://contactmanagerf-csmb-mohana.onrender.com${contact.profileImage}`}
                                         alt={contact.name}
                                         className="avatar-image"/>
                                 ) : (
